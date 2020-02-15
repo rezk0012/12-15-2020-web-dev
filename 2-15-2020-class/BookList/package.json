@@ -1,0 +1,14 @@
+{
+  "name": "booklist",
+  "version": "2.0.0",
+  "description": "List books and add them to fav.",
+  "main": "main.js",
+  "scripts": {},
+  "author": "Alfred Rezk",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "*"
+  }
+}

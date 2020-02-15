@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <style>
+        #form-card{
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <h1>Book Lister App</h1>
+        <button class="btn btn-success float-right mb-5" id="add-page"> 
+            + ADD BOOK 
+        </button>
+        <br>
+
+        <!-- ADD BOOK FORM  -->
+        <div class="card shadow mt-5" id="form-card">
+            <form id="addForm">
+                <div class="card-header">
+                    <h4>ADD BOOK</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="text" id ="title" class="form-control" placeholder="Book Title">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id ="author" class="form-control" placeholder="Book Auther">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id ="price" class="form-control" placeholder="Book Price">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id ="isbn" class="form-control" placeholder="Book ISBN">
+                    </div>
+                    <input type="submit" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+
+        <!-- BOOK Listing Table -->
+
+        <table class="table table-striped table-hover mt-5 text-left">
+            <thead class="thead-dark">
+                <tr id="tableHeader">
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
